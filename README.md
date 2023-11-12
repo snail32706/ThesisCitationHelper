@@ -1,8 +1,5 @@
-# Thesis Citation Helper - 論文引用助手
-### 歡迎使用 Thesis Citation Helper
-此 porgram 提供您將論文 citation 的 BibTex 找出，並輸出為「BibTex.txt」檔案。
-
-使用 Latex 撰寫論文時，citation 一項是個非常麻煩的問題，為了提高寫作速度，我們使用爬蟲將 BibTex 查找工作交給了電腦。
+# 歡迎使用 Thesis Citation Helper - 論文引用助手
+此 porgram 提供您將論文 citation 的 BibTex 找出，並輸出為「BibTex.txt」檔案。使用 Latex 撰寫論文時，citation 一項是個非常麻煩的問題，為了提高寫作速度，我們使用爬蟲將 BibTex 查找工作交給了電腦。
 
 ## 使用方法
 
@@ -21,14 +18,13 @@ python3 main.py
 porgram 會開啟一個對話筐
 ![Choose File](images/chooseFile.png?raw=true "Choose File")
 
-
-## 說明
+### 說明
 porgram 會搜尋論文中的 `[doi.org/ ...]`文字，然後使用 Chrome 搜尋所有的 citation。
 接著會得到兩個檔案 `BibTex.txt`, `論文名稱`+`_replaced.txt`
 ![Finish](images/finish.png?raw=true "Finish")
 
-1. `論文名稱`+`_replaced.txt`
+##### 1. `論文名稱`+`_replaced.txt`
 論文內文的`[doi]`更改為`\cite{...}`，並儲存為`論文名稱`+`_replaced.txt`，並且將搜尋到的 BibTex 存放在 BibTex.txt。
 
-1. `BibTex.txt`
-citation 都放在檔案中。若不需使用中文註解，可以將 funciton `save_txt`第一行的 `add_zh_title(bibtex_text)`添加`translate=False`的參數。
+##### 2. `BibTex.txt`
+citation 都放在檔案中。若不需使用中文註解，可以將 funciton `save_txt`第一行的 `add_zh_title`添加`translate=False`的參數。
