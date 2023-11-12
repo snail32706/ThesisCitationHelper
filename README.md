@@ -22,7 +22,7 @@ porgram 會開啟一個對話筐
 ![Choose File](images/chooseFile.png?raw=true "Choose File")
 
 
-### 說明
+## 說明
 porgram 會搜尋論文中的 `[doi.org/ ...]`文字，然後使用 Chrome 搜尋所有的 citation。
 接著會得到兩個檔案 `BibTex.txt`, `論文名稱`+`_replaced.txt`
 ![Finish](images/finish.png?raw=true "Finish")
@@ -31,6 +31,4 @@ porgram 會搜尋論文中的 `[doi.org/ ...]`文字，然後使用 Chrome 搜�
 論文內文的`[doi]`更改為`\cite{...}`，並儲存為`論文名稱`+`_replaced.txt`，並且將搜尋到的 BibTex 存放在 BibTex.txt。
 
 1. `BibTex.txt`
-citation 都放在檔案中。
-
-若不需使用中文註解，可以將 funciton `save_txt`第一行的 `add_zh_title(bibtex_text)`添加`translate=False`的參數。
+citation 都放在檔案中。若不需使用中文註解，可以將 funciton `save_txt`第一行的 `add_zh_title(bibtex_text)`添加`translate=False`的參數。
